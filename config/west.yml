@@ -10,7 +10,7 @@ manifest:
       url-base: https://github.com/petejohanson
   projects:
     - name: eyelash_corne
-      url: https://github.com/a741725193/zmk-new_corne
+      url: https://github.com/crizzy9/eylash-corne
       revision: main
     - name: zmk
       remote: petejohanson
