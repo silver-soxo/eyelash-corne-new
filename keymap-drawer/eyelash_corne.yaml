@@ -43,12 +43,12 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-tab$$', h: LOWER}
   - {t: '$$mdi:backspace-reverse-outline$$', h: GAMING}
-  - {t: '$$mdi:keyboard-esc$$', h: NAVIGATION}
+  - {t: '$$mdi:keyboard-esc$$', h: NAVIGATE}
   - {t: '$$mdi:backspace$$', h: NUMBER}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-return$$', h: SYSTEM}
   - {t: '$$mdi:keyboard-tab$$', h: FUNCTION}
-  COLEMAK_DH:
+  COLEMAK:
   - {t: '`', s: '~'}
   - Q
   - W
@@ -92,7 +92,7 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-tab$$', h: LOWER}
   - {t: '$$mdi:backspace-reverse-outline$$', h: GAMING}
-  - {t: '$$mdi:keyboard-esc$$', h: NAVIGATION}
+  - {t: '$$mdi:keyboard-esc$$', h: NAVIGATE}
   - {t: '$$mdi:backspace$$', h: NUMBER}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-return$$', h: SYSTEM}
@@ -141,7 +141,7 @@ layers:
   - P
   - {t: '$$mdi:keyboard-tab$$', h: LOWER}
   - {t: '$$mdi:backspace-reverse-outline$$', h: GAMING}
-  - {t: '$$mdi:keyboard-esc$$', h: NAVIGATION}
+  - {t: '$$mdi:keyboard-esc$$', h: NAVIGATE}
   - {t: '$$mdi:backspace$$', h: NUMBER}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-return$$', h: SYSTEM}
@@ -293,7 +293,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  NAVIGATION:
+  NAVIGATE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -442,7 +442,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   LOWER:
   - {t: QWERTY, h: toggle}
-  - {t: COLEMAK_DH, h: toggle}
+  - {t: COLEMAK, h: toggle}
   - {t: ENGRAM, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -484,7 +484,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: GAMING, h: toggle}
-  - {t: NAVIGATION, h: toggle}
+  - {t: NAVIGATE, h: toggle}
   - {t: NUMBER, h: toggle}
   - {t: SYMBOL, h: toggle}
   - {t: SYSTEM, h: toggle}

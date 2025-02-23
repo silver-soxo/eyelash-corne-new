@@ -548,8 +548,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-esc"/>
-<a href="#NAVIGATION">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 60%">NAVIGATION</tspan></text>
+<a href="#NAVIGATE">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">NAVIGATE</tspan></text>
 </a></g>
 <g transform="translate(348, 226) rotate(24.0)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -581,8 +581,8 @@ rect.held, rect.combo.held {
 </a></g>
 </g>
 </g>
-<g transform="translate(40, 318)" class="layer-COLEMAK_DH">
-<text x="0" y="28" class="label" id="COLEMAK_DH">COLEMAK_DH:</text>
+<g transform="translate(40, 318)" class="layer-COLEMAK">
+<text x="0" y="28" class="label" id="COLEMAK">COLEMAK:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -821,8 +821,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-esc"/>
-<a href="#NAVIGATION">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 60%">NAVIGATION</tspan></text>
+<a href="#NAVIGATE">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">NAVIGATE</tspan></text>
 </a></g>
 <g transform="translate(348, 226) rotate(24.0)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1094,8 +1094,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-esc"/>
-<a href="#NAVIGATION">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 60%">NAVIGATION</tspan></text>
+<a href="#NAVIGATE">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">NAVIGATE</tspan></text>
 </a></g>
 <g transform="translate(348, 226) rotate(24.0)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1934,8 +1934,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 1911)" class="layer-NAVIGATION">
-<text x="0" y="28" class="label" id="NAVIGATION">NAVIGATION:</text>
+<g transform="translate(40, 1911)" class="layer-NAVIGATE">
+<text x="0" y="28" class="label" id="NAVIGATE">NAVIGATE:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -2694,8 +2694,8 @@ rect.held, rect.combo.held {
 <g transform="translate(84, 49)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#COLEMAK_DH">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 60%">COLEMAK_DH</tspan></text>
+<a href="#COLEMAK">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">COLEMAK</tspan></text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(140, 35)" class="key keypos-2">
@@ -2909,8 +2909,8 @@ rect.held, rect.combo.held {
 <g transform="translate(285, 209) rotate(12.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#NAVIGATION">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 60%">NAVIGATION</tspan></text>
+<a href="#NAVIGATE">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 75%">NAVIGATE</tspan></text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(348, 226) rotate(24.0)" class="key keypos-44">
