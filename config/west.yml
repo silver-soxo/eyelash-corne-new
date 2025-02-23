@@ -8,10 +8,9 @@ manifest:
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
     - name: petejohanson
       url-base: https://github.com/petejohanson
+    - name: crizzy9
+      url-base: http://github.com/crizzy9
   projects:
-    - name: eyelash_corne
-      url: https://github.com/crizzy9/eylash-corne
-      revision: main
     - name: zmk
       remote: petejohanson
       revision: feat/pointers-with-input-processors
