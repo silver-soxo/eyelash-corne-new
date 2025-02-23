@@ -164,10 +164,10 @@
 
         navigate {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans                    &trans          &kp K_UNDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_REDO  &kp K_MUTE
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans            &trans  &trans  &trans  &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT  &kp RIGHT   &kp C_VOLUME_UP
-&trans  &trans    &trans    &trans     &trans     &trans  &trans            &trans          &kp K_LOCK  &kp HOME     &kp PG_DN   &kp PG_UP  &kp END     &kp C_VOLUME_DOWN
-                            &trans     &trans     &trans                                    &trans      &trans       &trans
+&trans  &trans    &trans    &trans     &trans     &trans                            &mmv MOVE_UP                     &kp K_UNDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_REDO  &kp K_MUTE
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT  &kp RIGHT   &kp C_VOLUME_UP
+&trans  &trans    &trans    &trans     &trans     &trans  &trans                    &mmv MOVE_DOWN                   &kp K_LOCK  &kp HOME     &kp PG_DN   &kp PG_UP  &kp END     &kp C_VOLUME_DOWN
+                            &trans     &trans     &trans                                                             &trans      &trans       &trans
             >;
 
             label = "NAVIGATE";
