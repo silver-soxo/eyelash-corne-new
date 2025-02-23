@@ -88,37 +88,6 @@
         tap-ms = <30>;
     };
 
-    macros {
-        left_pinky_hold: left_pinky_hold {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_param_1to1>,
-                <&macro_press>,
-                <&kp MACRO_PLACEHOLDER &mo 0>,
-                <&macro_pause_for_release>,
-                <&macro_param_1to1>,
-                <&macro_release>,
-                <&kp MACRO_PLACEHOLDER &mo 0>;
-
-            label = "LEFT_PINKY_HOLD";
-        };
-
-        left_pinky_tap: left_pinky_tap {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHIFT &kp RSHIFT &kp LALT &kp RALT &kp LCTRL &kp RCTRL &kp LGUI &kp RGUI>,
-                <&macro_tap>,
-                <&kp A &macro_param_1to1>,
-                <&macro_tap>,
-                <&kp MACRO_PLACEHOLDER>;
-
-            label = "LEFT_PINKY_TAP";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -134,8 +103,8 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        colemak_dh {
-            display-name = "COLEMAK_DH";
+        colemak {
+            display-name = "COLEMAK";
             bindings = <
 &kp GRAVE       &kp Q             &kp W             &kp F                &kp P              &kp B                                          &kp UP                &kp J               &kp L               &kp U               &kp Y              &kp APOS           &kp MINUS
 &caps_word      &hrm_left LGUI A  &hrm_left LALT R  &hrm_left LCTRL S    &hrm_left LSHFT T  &kp G                                &kp LEFT  &kp ENTER  &kp RIGHT  &kp M               &hrm_right RSHFT N  &hrm_right RCTRL E  &hrm_right RALT I  &hrm_right RGUI O  &kp SEMI
@@ -193,7 +162,7 @@
             sensor-bindings = <&rgb_encoder>;
         };
 
-        navigation {
+        navigate {
             bindings = <
 &trans  &trans    &trans    &trans     &trans     &trans                    &trans          &kp K_UNDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_REDO  &kp K_MUTE
 &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans            &trans  &trans  &trans  &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT  &kp RIGHT   &kp C_VOLUME_UP
@@ -201,7 +170,7 @@
                             &trans     &trans     &trans                                    &trans      &trans       &trans
             >;
 
-            label = "NAVIGATION";
+            label = "NAVIGATE";
         };
 
         function {
