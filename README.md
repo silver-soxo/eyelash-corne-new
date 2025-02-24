@@ -2,11 +2,15 @@
 
 ![corne mx wireless](https://github.com/user-attachments/assets/77fc2228-e4b9-479c-93fc-f2ccdf96a7bd)
 
-This ZMK configuration is for a keyboard with a rotary encoder and a pointer device available at [panadakb](https://pandakb.com/products/keyboard-kit/corne-j-zmk-wireless-keyboard-with-5-way-switch-and-knob/) and [AliExpress](https://www.aliexpress.us/item/3256807449244665.html)
-This configuration is inspired by [Miryoku](https://github.com/manna-harbour/miryoku_zmk) and contains a sleek looking customized nice!view shield inspired by [nice_view_gem](https://github.com/M165437/nice-view-gem)
-Additionally, it also generates a keymap svg for reference
+This ZMK configuration is for a keyboard with a rotary encoder and a pointer device available at [xcmkb](https://xcmkb.com/products/wireless-corne-mx-joystick), [panadakb](https://pandakb.com/products/keyboard-kit/corne-j-zmk-wireless-keyboard-with-5-way-switch-and-knob/) and [AliExpress](https://www.aliexpress.us/item/3256807449244665.html)
 
-You can order your [custom keycap set](https://yuzukeycaps.com/c/bdfc50f2-9d9b-4a87-9f24-02cc43ce19a2) from YUZU keycaps
+Additionally, you'll need some switches and keycaps.
+  **Switches**: I prefer the Yellow Gateron Pro Hot Swap 5Pin 50g Switches bought from [AliExpress](https://www.aliexpress.us/item/3256803154203988.html)
+  **Keycaps**: You can order your [custom keycap set](https://yuzukeycaps.com/c/bdfc50f2-9d9b-4a87-9f24-02cc43ce19a2) for the configuration from YUZU keycaps
+
+This configuration is inspired by [Miryoku](https://github.com/manna-harbour/miryoku_zmk) and contains a sleek looking customized nice!view shield inspired by [nice_view_gem](https://github.com/M165437/nice-view-gem) and it also generates a keymap for reference
+
+Total cost: $154 (~$182 with tax and shipping)
 
 ## Instructions
 
