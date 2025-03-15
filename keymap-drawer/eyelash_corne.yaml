@@ -6,7 +6,7 @@ layers:
   - E
   - R
   - T
-  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Y
   - U
   - I
@@ -19,9 +19,9 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
-  - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
@@ -35,7 +35,7 @@ layers:
   - V
   - B
   - $$mdi:keyboard-space$$
-  - $$mdi:arrow-down-bold$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - N
   - M
   - {t: ',', s: <}
@@ -202,28 +202,28 @@ layers:
   - F4
   - F5
   - F6
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:arrow-up-bold$$
   - '%'
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '=', s: +}
-  - {t: ',', s: <}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - F7
   - F8
   - F9
   - F10
   - F11
   - F12
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
   - +
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - {t: '-', s: _}
-  - .
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - PRINTSCREEN
   - '&mkp MB5'
   - '&mkp MB4'
@@ -231,7 +231,7 @@ layers:
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:volume-off$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - $$mdi:arrow-down-bold$$
   - '*'
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
