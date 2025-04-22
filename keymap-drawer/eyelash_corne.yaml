@@ -93,10 +93,10 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: QWERTY}
-  - {t: '$$mdi:keyboard-esc$$', h: QWERTY, type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:backspace$$', h: QWERTY}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-return$$', h: QWERTY}
+  - SYMBOL
   - {t: '$$mdi:keyboard-tab$$', h: QWERTY}
   ENGRAM:
   - {t: '`', s: '~'}
@@ -142,7 +142,7 @@ layers:
   - P
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: QWERTY}
-  - {t: '$$mdi:keyboard-esc$$', h: QWERTY}
+  - SYMBOL
   - {t: '$$mdi:backspace$$', h: QWERTY}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-return$$', h: QWERTY}
@@ -161,9 +161,9 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - '%'
-  - '#'
-  - ^
-  - {t: '=', s: +}
+  - BT CLR ALL
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - _
   - $
   - '*'
@@ -194,5 +194,5 @@ layers:
   - {t: ':', type: held alternate}
   - {t: ;, s: ':'}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
