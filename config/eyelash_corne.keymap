@@ -1,6 +1,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -120,7 +121,7 @@
 &kp GRAVE       &kp Q             &kp W             &kp F                &kp P              &kp B                                          &kp UP                &kp J               &kp L               &kp U               &kp Y              &kp APOS           &kp MINUS
 &caps_word      &hrm_left LGUI A  &hrm_left LALT R  &hrm_left LCTRL S    &hrm_left LSHFT T  &kp G                                &kp LEFT  &kp ENTER  &kp RIGHT  &kp M               &hrm_right RSHFT N  &hrm_right RCTRL E  &hrm_right RALT I  &hrm_right RGUI O  &kp SEMI
 &kp LEFT_SHIFT  &kp Z             &kp X             &kp C                &kp D              &kp V                   &kp SPACE              &kp DOWN              &kp K               &kp H               &kp COMMA           &kp DOT            &kp FSLH           &kp TAB
-                                                    &layer_tap 0 DELETE  &layer_tap 0 ESC   &layer_tap 0 BACKSPACE                                               &layer_tap 3 SPACE  &layer_tap 0 ENTER  &layer_tap 0 TAB
+                                                    &layer_tap 0 DELETE  &none              &layer_tap 0 BACKSPACE                                               &layer_tap 3 SPACE  &mo 3               &layer_tap 0 TAB
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -132,7 +133,7 @@
 &kp GRAVE       &kp B             &kp Y             &kp O                &kp U              &kp APOS                                       &kp UP                &kp SEMI            &kp L               &kp D               &kp W              &kp V              &kp Z
 &caps_word      &hrm_left LGUI C  &hrm_left LALT I  &hrm_left LCTRL E    &hrm_left LSHFT A  &kp COMMA                            &kp LEFT  &kp ENTER  &kp RIGHT  &kp DOT             &hrm_right RSHFT H  &hrm_right RCTRL T  &hrm_right RALT S  &hrm_right RGUI N  &kp Q
 &kp LEFT_SHIFT  &kp G             &kp X             &kp J                &kp K              &kp MINUS               &kp SPACE              &kp DOWN              &kp FSLH            &kp R               &kp M               &kp F              &kp P              &kp TAB
-                                                    &layer_tap 0 DELETE  &layer_tap 0 ESC   &layer_tap 0 BACKSPACE                                               &layer_tap 3 SPACE  &layer_tap 0 ENTER  &layer_tap 0 TAB
+                                                    &layer_tap 0 DELETE  &mo 3              &layer_tap 0 BACKSPACE                                               &layer_tap 3 SPACE  &layer_tap 0 ENTER  &layer_tap 0 TAB
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -140,10 +141,10 @@
 
         symbol {
             bindings = <
-&kp EXCLAMATION  &kp LEFT_BRACE  &kp SQT    &kp DOUBLE_QUOTES  &kp RIGHT_BRACE   &kp QUESTION                                     &mmv MOVE_UP                     &kp ENTER   &kp LS(TAB)           &kp TAB           &kp SPACE          &kp BACKSPACE          &kp PERCENT
-&kp HASH         &kp CARET       &kp EQUAL  &kp UNDERSCORE     &kp DOLLAR        &kp ASTERISK                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PERIOD  &kp GRAVE             &kp AMPERSAND     &kp PLUS           &kp AT                 &kp COLON
-&kp TILDE        &kp LESS_THAN   &kp PIPE   &kp MINUS          &kp GREATER_THAN  &kp SLASH      &kp SCROLLLOCK                    &mmv MOVE_DOWN                   &kp COMMA   &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-                                            &kp PERCENT        &kp COLON         &kp SEMICOLON                                                                     &trans      &trans                &trans
+&kp EXCLAMATION  &kp LEFT_BRACE  &kp SQT       &kp DOUBLE_QUOTES  &kp RIGHT_BRACE   &kp QUESTION                                     &mmv MOVE_UP                     &kp ENTER   &kp LS(TAB)           &kp TAB           &kp SPACE          &kp BACKSPACE          &kp PERCENT
+&bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &kp UNDERSCORE     &kp DOLLAR        &kp ASTERISK                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PERIOD  &kp GRAVE             &kp AMPERSAND     &kp PLUS           &kp AT                 &kp COLON
+&kp TILDE        &kp LESS_THAN   &kp PIPE      &kp MINUS          &kp GREATER_THAN  &kp SLASH      &kp SCROLLLOCK                    &mmv MOVE_DOWN                   &kp COMMA   &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+                                               &kp PERCENT        &kp COLON         &kp SEMICOLON                                                                     &trans      &trans                &trans
             >;
 
             label = "SYMBOL";
