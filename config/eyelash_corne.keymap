@@ -99,7 +99,7 @@
             label = "LESS_THAN";
         };
 
-         greater_than: greater_than {
+        greater_than: greater_than {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -408,16 +408,35 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <42 13>;
+        };
+
+        switch_lang {
+            bindings = <&switch_lang>;
+            key-positions = <42 28>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         qwerty {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E             &kp R  &kp T                                   &mmv MOVE_UP                     &kp Y               &kp U               &kp I               &kp O              &kp P                 &kp MINUS
-&kp CAPS        &kp A  &kp S  &kp D             &kp F  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H               &hrm_right RSHFT J  &hrm_right RCTRL K  &hrm_right RALT L  &hrm_right RGUI SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V  &kp B      &kp SPACE                    &mmv MOVE_DOWN                   &kp N               &kp M               &kp COMMA           &kp DOT            &kp FSLH              &kp TAB
-                              &kp LEFT_CONTROL  &mo 1  &kp SPACE                                                                &layer_tap 3 SPACE  &layer_tap 0 ENTER  &layer_tap 0 TAB
+&kp TAB         &kp Q  &kp W  &kp E             &kp R  &kp T                                         &kp UP_ARROW                     &kp Y      &kp U  &kp I         &kp O    &kp P          &kp BACKSPACE
+&kp CAPS        &kp A  &kp S  &kp D             &kp F  &kp G                         &kp LEFT_ARROW  &mkp LCLK       &kp RIGHT_ARROW  &kp H      &kp J  &kp K         &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V  &kp B      &kp PAUSE_BREAK                    &kp DOWN_ARROW                   &kp N      &kp M  &kp COMMA     &kp DOT  &kp FSLH       &kp LEFT_WIN
+                              &kp LEFT_CONTROL  &mo 1  &kp SPACE                                                                      &kp ENTER  &mo 2  &kp LEFT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -426,22 +445,22 @@
         colemak {
             display-name = "COLEMAK";
             bindings = <
-&kp GRAVE       &kp Q             &kp W             &kp F                &kp P              &kp B                                          &kp UP                &kp J               &kp L               &kp U               &kp Y              &kp APOS           &kp MINUS
-&caps_word      &hrm_left LGUI A  &hrm_left LALT R  &hrm_left LCTRL S    &hrm_left LSHFT T  &kp G                                &kp LEFT  &kp ENTER  &kp RIGHT  &kp M               &hrm_right RSHFT N  &hrm_right RCTRL E  &hrm_right RALT I  &hrm_right RGUI O  &kp SEMI
-&kp LEFT_SHIFT  &kp Z             &kp X             &kp C                &kp D              &kp V                   &kp SPACE              &kp DOWN              &kp K               &kp H               &kp COMMA           &kp DOT            &kp FSLH           &kp TAB
-                                                    &layer_tap 0 DELETE  &none              &layer_tap 0 BACKSPACE                                               &layer_tap 3 SPACE  &mo 3               &layer_tap 0 TAB
+&kp GRAVE        &trans           &trans                             &kp UP_ARROW         &trans           &trans                                              &kp END                   &kp PAGE_UP         &kp NUMBER_7  &kp NUMBER_8      &kp N9        &trans        &kp LEFT_BRACKET
+&trans           &trans           &kp LEFT_ARROW                     &kp DOWN_ARROW       &kp RIGHT_ARROW  &trans                                &kp LC(LEFT)  &kp ENTER  &kp LC(RIGHT)  &kp PAGE_DOWN       &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6  &kp NUMBER_0  &kp RIGHT_BRACKET
+&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_COLOR_HSB(115,100,50)  &trans               &trans           &kp DELETE              &kp K_MUTE                  &kp HOME                  &kp PRINTSCREEN     &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &trans        &trans
+                                                                     &layer_tap 0 DELETE  &none            &layer_tap 0 BACKSPACE                                                        &layer_tap 3 SPACE  &mo 3         &layer_tap 0 TAB
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&rgb_encoder>;
         };
 
         engram {
             display-name = "ENGRAM";
             bindings = <
-&kp GRAVE       &kp B             &kp Y             &kp O                &kp U              &kp APOS                                       &kp UP                &kp SEMI            &kp L               &kp D               &kp W              &kp V              &kp Z
-&caps_word      &hrm_left LGUI C  &hrm_left LALT I  &hrm_left LCTRL E    &hrm_left LSHFT A  &kp COMMA                            &kp LEFT  &kp ENTER  &kp RIGHT  &kp DOT             &hrm_right RSHFT H  &hrm_right RCTRL T  &hrm_right RALT S  &hrm_right RGUI N  &kp Q
-&kp LEFT_SHIFT  &kp G             &kp X             &kp J                &kp K              &kp MINUS               &kp SPACE              &kp DOWN              &kp FSLH            &kp R               &kp M               &kp F              &kp P              &kp TAB
-                                                    &layer_tap 0 DELETE  &mo 3              &layer_tap 0 BACKSPACE                                               &layer_tap 3 SPACE  &layer_tap 0 ENTER  &layer_tap 0 TAB
+&trans  &kp EXCLAMATION  &at_sign       &hash_sign     &dollar_sign    &kp PERCENT                            &kp UP                &caret_sign  &ask_sign             &kp ASTERISK     &ampersant_sign        &kp PLUS              &kp EQUAL
+&trans  &kp UNDERSCORE   &letf_barcket  &kp MINUS      &right_bracket  &slash_sign                  &kp LEFT  &kp ENTER  &kp RIGHT  &slash       &kp LEFT_PARENTHESIS  &semicolon_sign  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH  &grave_sign
+&trans  &trans           &less_than     &single_quote  &greater_than   &double_quotes  &kp SPACE              &kp DOWN              &back_slash  &letf_brace           &colon_sign      &right_brace           &pipe_sign            &tilde_sign
+                                        &kp LEFT_WIN   &mo 3           &kp SPACE                                                    &kp ENTER    &trans                &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -449,10 +468,10 @@
 
         symbol {
             bindings = <
-&kp EXCLAMATION  &kp LEFT_BRACE  &kp SQT       &kp DOUBLE_QUOTES  &kp RIGHT_BRACE   &kp QUESTION                                     &mmv MOVE_UP                     &kp ENTER   &kp LS(TAB)           &kp TAB           &kp SPACE          &kp BACKSPACE          &kp PERCENT
-&bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &kp UNDERSCORE     &kp DOLLAR        &kp ASTERISK                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PERIOD  &kp GRAVE             &kp AMPERSAND     &kp PLUS           &kp AT                 &kp COLON
-&kp TILDE        &kp LESS_THAN   &kp PIPE      &kp MINUS          &kp GREATER_THAN  &kp SLASH      &kp SCROLLLOCK                    &mmv MOVE_DOWN                   &kp COMMA   &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-                                               &kp PERCENT        &kp COLON         &kp SEMICOLON                                                                     &trans      &trans                &trans
+&kp F1          &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                            &mmv MOVE_UP                     &kp F7  &kp LS(F8)  &kp F9  &kp F10  &kp F11  &kp F12
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans      &trans  &trans   &trans   &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &kp C_SLEEP_MODE                    &mmv MOVE_DOWN                   &trans  &trans      &trans  &trans   &trans   &trans
+                                            &trans        &trans        &trans                                                                             &trans  &trans      &trans
             >;
 
             label = "SYMBOL";
