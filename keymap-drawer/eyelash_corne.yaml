@@ -101,46 +101,46 @@ layers:
   ENGRAM:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
-  - '&at_sign'
-  - '&hash_sign'
-  - '&dollar_sign'
+  - '@'
+  - '#'
+  - $
   - '%'
   - $$mdi:arrow-up-bold$$
-  - '&caret_sign'
-  - '&ask_sign'
+  - ^
+  - '?'
   - '*'
-  - '&ampersant_sign'
+  - '&'
   - +
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - _
-  - '&letf_barcket'
+  - {t: '[', s: '{'}
   - {t: '-', s: _}
-  - '&right_bracket'
-  - '&slash_sign'
+  - {t: ']', s: '}'}
+  - {t: /, s: '?'}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - '&slash'
+  - {t: /, s: '?'}
   - (
-  - '&semicolon_sign'
+  - {t: ;, s: ':'}
   - )
   - \
-  - '&grave_sign'
+  - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&less_than'
-  - '&single_quote'
-  - '&greater_than'
-  - '&double_quotes'
+  - <
+  - '"'
+  - '>'
+  - {t: '''', s: '"'}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
-  - '&back_slash'
-  - '&letf_brace'
-  - '&colon_sign'
-  - '&right_brace'
-  - '&pipe_sign'
-  - '&tilde_sign'
+  - {t: \, s: '|'}
+  - '{'
+  - ':'
+  - '}'
+  - '|'
+  - '~'
   - LEFT WIN
   - SYMBOL
   - $$mdi:keyboard-space$$
