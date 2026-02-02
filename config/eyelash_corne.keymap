@@ -445,10 +445,10 @@
         colemak {
             display-name = "COLEMAK";
             bindings = <
-&kp N1           &kp N2           &kp N3          &kp N4               &kp N5           &kp N6                                              &kp END                   &kp PAGE_UP         &kp NUMBER_7  &kp NUMBER_8      &kp N9        &trans        &kp LEFT_BRACKET
-&kp GRAVE        &trans           &trans          &kp UP_ARROW         &trans           &trans                                &kp LC(LEFT)  &kp ENTER  &kp LC(RIGHT)  &kp PAGE_DOWN       &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6  &kp NUMBER_0  &kp RIGHT_BRACKET
-&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &kp LEFT_ARROW  &kp DOWN_ARROW       &kp RIGHT_ARROW  &kp DELETE              &kp K_MUTE                  &kp HOME                  &kp PRINTSCREEN     &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &trans        &trans
-                                                  &layer_tap 0 DELETE  &none            &layer_tap 0 BACKSPACE                                                        &layer_tap 3 SPACE  &mo 3         &layer_tap 0 TAB
+&trans     &trans  &trans              &kp UP_ARROW    &kp N5               &kp N6                                  &kp END                   &kp PAGE_UP      &kp NUMBER_7  &kp NUMBER_8      &kp N9        &trans        &kp LEFT_BRACKET
+&kp GRAVE  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans                    &kp LC(LEFT)  &kp ENTER  &kp LC(RIGHT)  &kp PAGE_DOWN    &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6  &kp NUMBER_0  &kp RIGHT_BRACKET
+&kp L      &trans  &kp LS(LEFT_ARROW)  &kp CAPSLOCK    &kp LS(RIGHT_ARROW)  &kp DELETE  &kp K_MUTE                  &kp HOME                  &kp PRINTSCREEN  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &trans        &trans
+                                       &kp LEFT_WIN    &none                &kp SPACE                                                         &kp ENTER        &mo 3         &layer_tap 0 TAB
             >;
 
             sensor-bindings = <&rgb_encoder>;
@@ -468,10 +468,10 @@
 
         symbol {
             bindings = <
-&kp F1          &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                            &mmv MOVE_UP                     &kp F7  &kp LS(F8)  &kp F9  &kp F10  &kp F11  &kp F12
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans      &trans  &trans   &trans   &trans
-&trans          &trans        &trans        &trans        &trans        &trans        &kp C_SLEEP_MODE                    &mmv MOVE_DOWN                   &trans  &trans      &trans  &trans   &trans   &trans
-                                            &trans        &trans        &trans                                                                             &trans  &trans      &trans
+&kp F1          &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                            &mmv MOVE_UP                     &kp F7           &kp F8           &kp F9                             &kp F10          &kp F11          &kp F12
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans           &trans           &trans                             &trans           &trans           &trans
+&bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans        &kp C_SLEEP_MODE                    &mmv MOVE_DOWN                   &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_COLOR_HSB(126,100,50)  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans
+                                            &trans        &trans        &trans                                                                             &trans           &trans           &trans
             >;
 
             label = "SYMBOL";
