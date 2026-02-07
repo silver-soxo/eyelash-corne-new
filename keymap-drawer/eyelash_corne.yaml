@@ -50,10 +50,10 @@ layers:
   - ENGRAM
   - $$mdi:apple-keyboard-option$$
   COLEMAK:
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-up-bold$$
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - END
@@ -65,9 +65,9 @@ layers:
   - {t: '[', s: '{'}
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -78,11 +78,11 @@ layers:
   - '6'
   - '0'
   - {t: ']', s: '}'}
-  - RGB TOG
-  - RGB EFF
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - L
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+$$mdi:arrow-left-bold$$
+  - $$mdi:apple-keyboard-caps$$
+  - Sft+$$mdi:arrow-right-bold$$
   - $$mdi:backspace-reverse-outline$$
   - MUTE
   - HOME
@@ -92,10 +92,10 @@ layers:
   - '3'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: QWERTY}
+  - LEFT WIN
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:backspace$$', h: QWERTY}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - SYMBOL
   - {t: '$$mdi:keyboard-tab$$', h: QWERTY}
   ENGRAM:
@@ -156,12 +156,12 @@ layers:
   - F6
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F7
-  - Sft+F8
+  - F8
   - F9
   - F10
   - F11
   - F12
-  - BT CLR ALL
+  - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -176,7 +176,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -184,17 +184,17 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - SLEEP MODE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB TOG
+  - RGB EFF
+  - RGB COLOR HSB(126,100,50)
+  - RGB BRI
+  - RGB BRD
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [0, 1]
